@@ -1,0 +1,20 @@
+<%- include('../partials/header', { pageTitle: 'Katalog Produk' }) %>
+
+<div class="card">
+    <h1>Halaman Katalog Produk</h1>
+    <p>Selamat datang di halaman katalog produk menggunakan router terisolasi.</p>
+</div>
+
+<div class="card" style="margin-top: 2rem;">
+    <h2>Form Tambah Produk</h2>
+    <!-- Formulir mengirim data melalui metode HTTP POST -->
+    <form action="/katalog/tambah" method="POST">
+        <div style="margin-bottom: 1rem;">
+            <label for="namaProduk">Nama Produk: </label><br>
+            <input type="text" id="namaProduk" name="namaProduk" required>
+        </div>
+        <button type="submit">Kirim Payload</button>
+    </form>
+</div>
+
+<%- include('../partials/footer') %>
